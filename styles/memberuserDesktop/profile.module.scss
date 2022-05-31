@@ -1,0 +1,644 @@
+@import "../variables.scss";
+
+.notification {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 3vh 0 0 4vw;
+  .heading {
+    color: $primary;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: left;
+  }
+  .card {
+    width: 39vw;
+    height: 88px;
+    background-color: $back-ground1;
+    display: flex;
+    padding: 7px;
+    align-items: center;
+    justify-content: center;
+
+    border-bottom: 1px solid $warning-light;
+    .logo {
+      width: 54px;
+      height: 54px;
+    }
+    .content {
+      width: 80%;
+      margin: 17px;
+      h3 {
+        color: #5c5c5c;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 200.7%;
+      }
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 154.2%;
+        color: #565656;
+      }
+    }
+
+    .view {
+      margin-right: 7px;
+      width: 82px;
+      height: 31px;
+      background: $view-btn;
+      border: 1px solid $view-btn;
+      border-radius: 2px;
+    }
+  }
+}
+// events
+
+.search_events {
+  width: 100vw;
+  // height: 140vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1vh 5vw;
+  .backbutton {
+    margin-top: 30px;
+    color: $warning;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .event_container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heading {
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #645f59;
+  }
+
+  .search_bar {
+    display: flex;
+    flex-direction: row;
+    .search_bar_paper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .search_btn {
+      color: white;
+      text-transform: uppercase;
+      font-style: italic;
+      background: #6f542f;
+      border: 1.6px solid #ffffff;
+      box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.08);
+      width: 182px;
+      height: 53px;
+    }
+  }
+
+  .events {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 60px;
+    .event_headingEvent {
+      text-align: left;
+      color: $info;
+      font-weight: 400;
+      font-size: 40px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .event_heading {
+      color: $warning;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 41px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .upcommingEvents {
+      width: 100%;
+      display: flex;
+      padding: 60px;
+      background: #ffffff;
+      border: 3px solid $view-btn;
+      border-radius: 2px;
+      margin: 30px Auto;
+      .left {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+      }
+      .right {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.meet {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 35px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $info;
+}
+.paraDescription {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: $para;
+  width: 80%;
+}
+.table {
+  display: flex;
+  flex-direction: column;
+}
+.tHead {
+  display: flex;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 50%;
+  color: $para;
+  p {
+    width: 30%;
+  }
+}
+.tContent {
+  display: flex;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 50%;
+  color: $dark;
+  margin-bottom: 10px;
+  p {
+    width: 30%;
+  }
+}
+.detailsBtn {
+  color: white;
+  border: none;
+  font-weight: 600;
+  font-size: 18px;
+  width: 240px;
+  height: 60px;
+  background: $info;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+.nextEvent {
+  width: 100%;
+  display: flex;
+  padding: 60px;
+  background: $light-pink;
+  margin: 30p auto;
+  border-radius: 2px;
+  .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+//view event page
+
+.viewcontainer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 100px;
+  background-color: $back-ground2;
+}
+
+.backbtn {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: $warning;
+}
+.eventview {
+  width: 100vw;
+  display: flex;
+  margin: 60px auto;
+  .right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .heading {
+      color: $info;
+      font-weight: 600;
+      font-size: 36px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .date {
+      font-weight: 400;
+      font-size: 16px;
+      color: $warning;
+    }
+  }
+  .left {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.vieweventdetails {
+  width: 100vw;
+  padding: 100px 160px;
+  display: flex;
+  .left {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+  .heading {
+    color: $info;
+    font-weight: 600;
+    font-size: 26px;
+    text-transform: uppercase;
+  }
+  .label {
+    color: $para;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .ans {
+    color: $dark;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+//profile page
+
+.profilecontainer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 100px;
+  background-color: $back-ground2;
+  position: relative;
+  z-index: 0;
+  .profileview {
+    width: 100vw;
+    display: flex;
+    margin: 60px auto;
+    .right {
+      width: 50%;
+      display: flex;
+      padding-top: 20px;
+      flex-direction: column;
+      .heading {
+        color: $info;
+        font-weight: 600;
+        font-size: 36px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+      .type {
+        font-weight: 400;
+        font-size: 16px;
+        color: $warning;
+      }
+
+      //event btns
+
+      .eventatended {
+        background-color: $info;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 194px;
+        height: 95px;
+        margin: 40px 20px 0 0;
+        border: 1.6px solid #ffffff;
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.08);
+        border-radius: 2px;
+        padding: 10px;
+        .count {
+          color: #f5f5f5;
+          font-weight: 600;
+          font-size: 32px;
+        }
+        .counttype {
+          color: whitesmoke;
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
+    }
+    .left {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.profiledetails {
+  width: 100vw;
+  padding: 100px 160px;
+  display: flex;
+  .left {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+  .heading {
+    color: $info;
+    font-weight: 600;
+    font-size: 26px;
+    text-transform: uppercase;
+  }
+  .right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    .eventslist {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .eventname {
+        color: $info;
+        font-weight: 600;
+        font-size: 16px;
+      }
+      .eventdate {
+        color: $eventdes;
+        font-weight: 600;
+        font-size: 14px;
+      }
+      .eventstatus {
+        color: $warning;
+        font-weight: 600;
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.titles {
+  width: 80%;
+  color: $para;
+  font-weight: 600;
+  font-size: 14px;
+}
+.content {
+  color: $dark;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.editbtn {
+  color: white;
+  font-size: 14px;
+  width: 80%;
+  height: 50px;
+  background-color: $info;
+  border: none;
+  border-radius: 2px;
+  margin-top: 20px;
+}
+
+.cancelbtn {
+  color: $dark;
+  font-size: 14px;
+  width: 80%;
+  height: 50px;
+  border: none;
+  margin-top: 20px;
+  background: none;
+}
+.eventsort {
+  display: flex;
+  color: $para;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.editinput {
+  width: 80%;
+  color: $dark;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid rgba(33, 33, 33, 0.4);
+}
+
+.nativeselect {
+  width: 80%;
+  color: $dark;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+//signin profile
+.signcontainer {
+  .profilecontainersign {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0 0 100px;
+    background-color: $back-ground2;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 100px;
+    .profileview {
+      width: 100vw;
+      display: flex;
+
+      .right {
+        width: 50%;
+        display: flex;
+        padding-top: 20px;
+        flex-direction: column;
+        justify-content: center;
+        .heading {
+          color: $info;
+          font-weight: 600;
+          font-size: 36px;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+        }
+        .type {
+          font-weight: 400;
+          font-size: 16px;
+          color: $warning;
+        }
+
+        //event btns
+
+        .eventatended {
+          background-color: $info;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 194px;
+          height: 95px;
+          margin: 40px 20px 0 0;
+          border: 1.6px solid #ffffff;
+          box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.08);
+          border-radius: 2px;
+          padding: 10px;
+          .count {
+            color: #f5f5f5;
+            font-weight: 600;
+            font-size: 32px;
+          }
+          .counttype {
+            color: whitesmoke;
+            font-size: 18px;
+            line-height: 24px;
+          }
+        }
+      }
+      .left {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 100px;
+      }
+    }
+  }
+
+  .italicheader {
+    color: $primary;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 54px;
+    margin: 190px 0 0 240px;
+  }
+
+  .invitedEvent {
+    width: 100%;
+    display: flex;
+    padding: 60px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+
+    .left {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      padding-left: 160px;
+    }
+    .right {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  //report page
+
+  .report {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    .left {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .card {
+        width: 80%;
+        height: 467px;
+        background-color: $back-ground1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10%;
+        .cardhead {
+          color: $request-bg;
+          font-weight: 400;
+          font-size: 40px;
+          line-height: 54px;
+          margin-bottom: 20px;
+        }
+        .cardcontent {
+          color: $para;
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 34px;
+        }
+      }
+    }
+    //right
+    .right {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      .des {
+        display: flex;
+        .deshead {
+          font-weight: 600;
+          font-size: 16px;
+          width: 70%;
+        }
+        .desvalue {
+          font-size: 16px;
+          line-height: 22px;
+          display: flex;
+          color: $dark;
+          span {
+            width: 20px;
+            height: 20px;
+            background-color: $warning;
+            margin-right: 10px;
+          }
+        }
+      }
+
+      .graph {
+        width: 70%;
+        margin: 20px;
+      }
+    }
+  }
+}

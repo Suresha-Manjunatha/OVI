@@ -1,0 +1,529 @@
+@import "../variables.scss";
+
+.homecontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+
+  //navigation bar
+  .header {
+    width: 100vw;
+    height: 82px;
+    display: flex;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+    flex-direction: row;
+    background-color: $back-ground2;
+    .left {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      .logo {
+        width: 58px;
+        height: 58px;
+        margin-left: 60px;
+        background-color: transparent;
+      }
+    }
+    .right {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 60px;
+      .list {
+        margin: 20px;
+        border: none;
+        color: $request-bg;
+        background-color: transparent;
+        text-transform: uppercase;
+      }
+      .listclicked {
+        margin: 20px;
+        border: none;
+        color: $info;
+        font-weight: 600;
+        text-decoration: underline;
+        background-color: transparent;
+        text-transform: uppercase;
+      }
+      .signup {
+        width: 101px;
+        height: 42px;
+        margin: 20px;
+        border: 1px solid $request-bg;
+        color: $request-bg;
+        background-color: transparent;
+        text-transform: uppercase;
+        border-radius: 2px;
+      }
+    }
+  }
+
+  //front page
+  .front {
+    width: 100vw;
+    height: 813px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("../../public/images/Mask\ group.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    .heading {
+      color: white;
+      font-weight: 400;
+      font-size: 70px;
+      line-height: 75px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-top: 12vw;
+    }
+    .description {
+      color: white;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 40px;
+      text-align: center;
+      width: 75vw;
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      .joinbtn {
+        width: 262px;
+        height: 60px;
+        color: white;
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: uppercase;
+        background: $warning;
+        border: 1.6px solid #ffffff;
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.08);
+        border-radius: 2px;
+        margin: 11px;
+      }
+      .loginbtn {
+        width: 262px;
+        height: 60px;
+        background: transparent;
+        color: white;
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin: 11px;
+        border: 1px solid white;
+      }
+    }
+  }
+
+  //join ovi
+  .join_ovi {
+    width: 100vw;
+    height: 743px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    // background-color: lightgreen;
+    .pic_section {
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      //   background-color: $back-ground2;
+      .pic1 {
+        width: 380px;
+        height: 463px;
+      }
+      .pic2 {
+        width: 231px;
+        height: 344px;
+      }
+    }
+    .content_section {
+      height: max-content;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 50%;
+      //   background-color: $warning;
+      .heading {
+        color: $info;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 49px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+      .para {
+        width: 65%;
+        color: $para;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 39px;
+      }
+      .btn1 {
+        width: 302px;
+        height: 60px;
+        background-color: #c4dfff;
+        border: none;
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.08);
+        border-radius: 2px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $info;
+      }
+    }
+  }
+
+  //search event
+
+  .search_events {
+    width: 100vw;
+    // height: 140vh;
+    background-color: $bg-home-serch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .heading {
+      font-weight: 400;
+      font-size: 20px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #645f59;
+    }
+
+    .search_bar {
+      display: flex;
+      flex-direction: row;
+      .search_bar_paper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .search_btn {
+        color: white;
+        text-transform: uppercase;
+        font-style: italic;
+        background: #6f542f;
+        border: 1.6px solid #ffffff;
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.08);
+        width: 182px;
+        height: 53px;
+      }
+    }
+
+    .events {
+      width: 76vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .event_count {
+        font-style: italic;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 33px;
+        color: #645f59;
+      }
+      .event_heading {
+        color: $warning;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 41px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+      .card_container {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+      }
+
+      .card {
+        width: 343px;
+        height: 395px;
+        padding: 6px;
+        margin: 29px;
+        background-color: white;
+        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .card_head {
+          width: 319px;
+          height: 219px;
+        }
+        .card_content {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          .date {
+            width: 35px;
+            height: 50px;
+            margin: 10px;
+            .month {
+              color: $primary;
+              font-weight: 700;
+              font-size: 12px;
+            }
+            .day {
+              color: $warning;
+              font-weight: 700;
+              font-size: 28px;
+              line-height: 0;
+            }
+          }
+
+          .foot_content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 12px;
+            .content {
+              color: $primary;
+              font-weight: 600;
+              font-size: 16px;
+              position: relative;
+              top: 30px;
+            }
+            .description {
+              padding-top: 10px;
+              color: $para;
+              font-weight: 400;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    .load_btn {
+      width: 302px;
+      height: 61.55px;
+      margin: 60px;
+      background: #54504a;
+      box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.08);
+      border-radius: 2px;
+      font-weight: 400;
+      border: none;
+      font-size: 18px;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+      color: white;
+    }
+  }
+}
+
+//request event
+.request_events {
+  height: 493px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #fbf4f7;
+  .left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    .photo {
+      width: 597px;
+      height: 587px;
+      position: relative;
+    }
+  }
+  //right
+
+  .right_section {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50%;
+    //   background-color: $warning;
+    .heading {
+      color: $request-bg;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 49px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .para {
+      width: 65%;
+      color: #525252;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 39px;
+    }
+    .btn1 {
+      width: 302px;
+      height: 60px;
+      background-color: $request-bg;
+      border: none;
+      box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.08);
+      border-radius: 2px;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 27px;
+      text-align: center;
+      text-transform: uppercase;
+      color: white;
+    }
+  }
+}
+
+//stories
+
+.storeis {
+  width: 100vw;
+  height: autopx;
+  display: flex;
+  flex-direction: column;
+  //   justify-content: center;
+  align-items: center;
+  margin-top: 140px;
+
+  .heading {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 54px;
+    text-transform: uppercase;
+    color: $primary;
+  }
+
+  .desc {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: $para;
+  }
+  .card_container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+  }
+  .card {
+    margin: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 470px;
+    width: 343px;
+    .card_head {
+      width: 343px;
+      height: 210px;
+    }
+    .content {
+      color: $primary;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 140%;
+    }
+    .description {
+      color: $para;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+    }
+    .date {
+      color: $info;
+      font-weight: 600;
+      font-size: 18px;
+    }
+  }
+  .jbtn {
+    width: 302px;
+    height: 60px;
+    background: #c5dfff;
+    border: none;
+    color: #333333;
+    font-weight: 600;
+    font-size: 20px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.08);
+    border-radius: 2px;
+    margin: 77px;
+  }
+}
+
+//footer
+
+.footer {
+  width: 100vw;
+  height: 127px;
+  background-color: $back-ground2;
+  display: flex;
+  flex-direction: column;
+
+  .upper {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    padding-left: 100px;
+    border-bottom: 1px solid rgba(77, 77, 77, 0.1);
+
+    .copy {
+      width: 70%;
+      color: $footer-text;
+      font-weight: 500;
+      font-size: 14px;
+    }
+    .right {
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .icon {
+        margin: 16px;
+      }
+    }
+  }
+
+  .lower {
+    width: 100%;
+    height: 50%;
+    padding-left: 100px;
+    display: flex;
+    .text {
+      width: 70%;
+      color: $footer-text;
+      font-weight: 500;
+      font-size: 16px;
+    }
+    .right {
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .btn {
+        color: $info;
+        width: 248px;
+        height: 39px;
+        border: 1px solid $warning;
+        border-radius: 2px;
+        background-color: #faf7f2;
+        margin: 30px;
+      }
+      .upload {
+        width: 38px;
+        height: 38px;
+        color: $warning;
+        border: 1px solid $warning;
+        border-radius: 50%;
+        background-color: #faf7f2;
+        font-size: 30px;
+      }
+    }
+  }
+}

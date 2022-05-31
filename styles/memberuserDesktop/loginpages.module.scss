@@ -1,0 +1,142 @@
+@import "../variables.scss";
+
+.leftcontent {
+  width: 56vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  // align-self: center;
+  align-items: center;
+  // align-content: center;
+  // place-content: center;
+  padding: 50px 0 50px 0;
+}
+
+.rightlogo {
+  width: 44vw;
+  height: 100vh;
+  position: sticky;
+  top: 0px;
+}
+
+.mainlogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainlogo1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-start;
+  margin-left: 69px;
+}
+
+.inputscontainer {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  width: 450px;
+  margin-top: 70px;
+}
+.ovi {
+  font-size: 20px;
+  color: $light-blue;
+  font-weight: 400;
+}
+
+.ovititle {
+  font-size: 11px;
+  color: $light-blue;
+  font-style: italic;
+}
+.welcomeheading {
+  font-size: 43px;
+  color: $primary;
+  margin-top: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+.heading1 {
+  font-size: 36px;
+  color: $dark;
+  margin-top: 24px;
+  font-weight: 600;
+}
+.subheading {
+  font-size: 16px;
+  color: $dark;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+}
+
+.subheading1 {
+  font-size: 18px;
+  color: $dark;
+  font-weight: 400;
+  margin-bottom: 40px;
+  display: flex;
+}
+.otpinput {
+  width: 60px;
+  height: 60px;
+  border: 1px solid $warning;
+  border-radius: 2px;
+  margin-left: 18px;
+}
+.otpinput1 {
+  width: 60px;
+  height: 60px;
+  border: 1px solid $warning;
+  border-radius: 2px;
+}
+.submitbutton {
+  width: 100%;
+  font-size: 14px;
+  background-color: $info;
+  margin-top: 40px;
+  text-transform: unset;
+  cursor: pointer;
+}
+.logo {
+  width: 128px;
+  height: 128px;
+  background-color: white;
+}
+.backbutton {
+  width: 5vw;
+  padding: 60px 0 0 70px;
+  color: $secondary;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+}
+.button2 {
+  color: $dark;
+  font-size: 14px;
+  margin-top: 3rem;
+  font-weight: 600;
+  text-transform: unset;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+.linktext {
+  color: $warning;
+  font-size: 14px;
+  margin: 0 5px 0 5px;
+  text-align: right;
+}
+.resend {
+  color: $info;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+}

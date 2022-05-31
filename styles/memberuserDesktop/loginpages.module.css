@@ -1,0 +1,179 @@
+.leftcontent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 56vw;
+  padding: 170px 0 0 0;
+}
+
+.rightlogo {
+  width: 44vw;
+  height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+.mainlogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainlogo1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 69px;
+}
+
+.inputscontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  place-content: center;
+  width: 450px;
+  margin-top: 70px;
+}
+
+.ovi {
+  font-size: 20px;
+  color: #082950;
+  font-weight: 400;
+}
+
+.ovititle {
+  font-size: 11px;
+  color: #082950;
+  font-style: italic;
+}
+
+.welcomeheading {
+  font-size: 43px;
+  color: #18315f;
+  margin-top: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.heading1 {
+  font-size: 36px;
+  color: #212121;
+  margin-top: 24px;
+  font-weight: 600;
+}
+
+.subheading {
+  font-size: 16px;
+  color: #212121;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+}
+
+.subheading1 {
+  font-size: 18px;
+  color: #212121;
+  font-weight: 400;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.otpinput {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #c9ab81;
+  border-radius: 2px;
+  margin-left: 18px;
+}
+
+.otpinput1 {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #c9ab81;
+  border-radius: 2px;
+}
+
+.submitbutton {
+  width: 100%;
+  font-size: 14px;
+  background-color: #3a6599;
+  margin-top: 40px;
+  text-transform: unset;
+  cursor: pointer;
+}
+
+.logo {
+  width: 128px;
+  height: 128px;
+  background-color: white;
+}
+
+.backbutton {
+  width: 5vw;
+  padding: 60px 0 0 70px;
+  color: #a6a6a6;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.button2 {
+  color: #212121;
+  font-size: 14px;
+  margin-top: 3rem;
+  font-weight: 600;
+  text-transform: unset;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.linktext {
+  color: #c9ab81;
+  font-size: 14px;
+  margin: 0 5px 0 5px;
+  text-align: right;
+}
+
+.resend {
+  color: #3a6599;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+/*# sourceMappingURL=loginpages.module.css.map */
